@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stadium Reservation System</title>
+    <link rel="stylesheet" href="css/Conferm.css">
+    <style>
+        body {
+            background-image: url('images/stadium.jpg');
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            width: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Stadium Reservation System</h1>
+        </header>
+        <main>
+            <section id="reservation-form">
+                <h2>Confirm or Postpone Reservation</h2>
+                <form id="reservationActionForm">
+                    <label for="reservationId">Reservation ID:</label>
+                    <input type="text" id="reservationId" name="reservationId" required>
+                    
+                    <label for="stadiumName">Stadium Name:</label>
+                    <input type="text" id="stadiumName" name="stadiumName" required>
+                    
+                    <label for="reservationDay">Day:</label>
+                    <input type="text" id="reservationDay" name="reservationDay" required>
+                    
+                    <label for="reservationDate">Date:</label>
+                    <input type="date" id="reservationDate" name="reservationDate" required>
+                    
+                    <label for="reservationTime">Time:</label>
+                    <input type="time" id="reservationTime" name="reservationTime" required>
+                    
+                    <label for="mobileNumber">Mobile Number:</label>
+                    <input type="tel" id="mobileNumber" name="mobileNumber" required>
+                    
+                    <div>
+                        <button type="button" id="confirmButton">Confirm Reservation</button>
+                        <button type="button" id="postponeButton">Postpone Reservation</button>
+                    </div>
+                </form>
+                <div id="message"></div>
+            </section>
+        </main>
+        <footer>
+            Under the supervision of Captain Majed
+        </footer>
+    </div>
+    <script src="js/Conferm.js"></script>
+</body>
+</html>
